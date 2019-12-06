@@ -34,4 +34,13 @@ class AuthModel extends CI_Model{
             return $this->db->where('id', $id)->update($this->tableName, $this->data);
         }
     }
+
+    public function isAuth(){
+        return $this->getRow('access_token', $this->getAccessToken());
+    }
+
+    private function getAccessToken(){
+        $headers = $this->input->request_headers('Host');
+        return isset($headers['access_token']) ? $headers['access_token'] : '';
+    }
 }
