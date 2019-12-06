@@ -59,4 +59,5 @@ $route['users/store']['post']= "user/store";
 $route['users/edit/(:any)'] = "user/edit/$1";
 $route['users/update/(:any)']['post'] = "user/update/$1";
 $route['users/delete/(:any)'] = "user/delete/$1";
+$route['api/auth/login']['post'] = "auth/login";
 
