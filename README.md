@@ -1,5 +1,11 @@
 # eappEra-task
 
+#description :
+- You can create, edit, list, delete users
+- Build secure login API for user
+- Create secure and simple API  to publish posts
+
+
 #instllation
 - clone the project 
 ```git clone  git@github.com:badr4php/eappEra-task.git```
